@@ -6,7 +6,7 @@ pipeline {
     }
 
     environment {       
-        IMAGE_NAME = "sorada1111/lab3:${BUILD_ID}"
+        IMAGE_NAME = "SanishKad/lab3:${BUILD_ID}"
     }
 
     stages {
@@ -14,7 +14,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Get some code from a GitHub repository
-                git branch: 'main', url: 'https://github.com/soradaprathan/lab3-Q1.git'
+                git branch: 'main', url: 'https://github.com/Sanishkad/COMP-367-Lab3.git'
             }
         }
 
